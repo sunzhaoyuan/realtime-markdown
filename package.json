@@ -1,0 +1,21 @@
+{
+  "name": "realtime-markdown",
+  "version": "1.0.0",
+  "description": "realtime markdown viewer",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "author": "Zhaoyuan Sun",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "node": "^11.8.0",
+    "redis": "^2.8.0",
+    "share": "^0.6.3"
+  }
+}
