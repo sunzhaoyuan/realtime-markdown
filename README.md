@@ -19,3 +19,4 @@ Each unique path is a collaborative workboard. Simply enter the same workboard w
 - [ ] Provide pdf download link
 - [ ] UI box to enter workboard id
 - [ ] Invitation links (たぶん)
+- [ ] Show num of people in the workboard (たぶん)
