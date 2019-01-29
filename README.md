@@ -4,7 +4,8 @@ A realtime markdown viewer/editor that supports multiple editors editing a workb
 
 Try it at: https://realtime-markdown-zhaoyuan.herokuapp.com/
 
-<img src="realtime-markdown-example.gif" alt="example gif not shown" width="700"/>
+## Example Gif
+<img src="realtime-markdown-example.gif" alt="example gif not shown" width="500"/>
 
 ## Sample Usage:
 ### General Instruction
