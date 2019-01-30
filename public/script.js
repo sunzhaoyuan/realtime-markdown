@@ -1,17 +1,20 @@
 window.onload = function () {
     var showdown = require('showdown');
-    var converter = new showdown.Converter();
+    var converter = new showdown.Converter({
+        'tables': true,
+        'parseImgDimensions': true,
+        'ghCompatibleHeaderId': true,
+        'tasklists': true,
+        'simpleLineBreaks': true,
+        'emoji': true,
+        'smoothLivePreview': true,
+        'openLinksInNewWindow': true
+    });
+
+    converter.setFlavor('github');
+
     var pad = document.getElementById('pad');
     var markdownArea = document.getElementById('markdown');
-
-    // set options for converter
-    converter.setOption('tables', true);
-    converter.setOption('parseImgDimensions', true);
-    converter.setOption('ghCompatibleHeaderId', true);
-    converter.setOption('tasklists', true);
-    converter.setOption('simpleLineBreaks', true);
-    converter.setOption('openLinksInNewWindow', true);
-    converter.setOption('emoji', true);
 
     var previousMarkdownValue;
 
