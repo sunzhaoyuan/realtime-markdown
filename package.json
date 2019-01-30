@@ -4,7 +4,9 @@
   "description": "realtime markdown viewer",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "recompile": "browserify ./public/script.js -o ./public/bundle.js",
+    "heroku": "git push heroku main"
   },
   "keywords": [
     "markdown"
@@ -12,10 +14,12 @@
   "author": "Zhaoyuan Sun",
   "license": "ISC",
   "dependencies": {
+    "browserify": "^16.2.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "node": "^11.8.0",
     "redis": "^2.8.0",
-    "share": "^0.6.3"
+    "share": "^0.6.3",
+    "showdown": "^1.9.0"
   }
 }

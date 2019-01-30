@@ -1,16 +1,17 @@
 window.onload = function () {
+    var showdown = require('showdown');
     var converter = new showdown.Converter();
     var pad = document.getElementById('pad');
     var markdownArea = document.getElementById('markdown');
 
     // set options for converter
-    // showdown.setOption('tables', true);
-    // converter.setOption('parseImgDimensions', true);
-    // converter.setOption('ghCompatibleHeaderId', true);
-    // showdown.setOption('tasklists', true);
-    // converter.setOption('simpleLineBreaks', true);
-    // converter.setOption('openLinksInNewWindow', true);
-    // converter.setOption('emoji', true);
+    converter.setOption('tables', true);
+    converter.setOption('parseImgDimensions', true);
+    converter.setOption('ghCompatibleHeaderId', true);
+    converter.setOption('tasklists', true);
+    converter.setOption('simpleLineBreaks', true);
+    converter.setOption('openLinksInNewWindow', true);
+    converter.setOption('emoji', true);
 
     var previousMarkdownValue;
 
