@@ -1,67 +1,75 @@
-html, body, section, .full-height {
-    height: 100%;
+html,
+body,
+section,
+.full-height {
+  height: 100%;
 }
 
 #pad {
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-    border: none;
-    border-bottom: 1px solid black;
-    overflow: auto;
-    outline: none;
-    resize: horizontal;
-    max-width: 50%;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  border: none;
+  border-bottom: 1px solid black;
+  overflow: auto;
+  outline: none;
+  resize: horizontal;
+  max-width: 50%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 #markdown {
-    overflow: auto;
-    border-left: 1px solid black;
-    /* border: 1px solid black; */
+  overflow: auto;
+  border-left: 1px solid black;
 }
 
 table {
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    width: 100%;
-    table-layout: fixed;
-    background-color: #f8f8f8;
-    word-wrap: break-word;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    /* padding: 0.125rem 0.3125rem 0.0625rem; */
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  width: 100%;
+  table-layout: fixed;
+  background-color: #f8f8f8;
+  word-wrap: break-word;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 th {
-    padding: 10px 15px;
-    font-weight: 500;
-    font-size: 13px;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    border: solid 1px rgba(0, 0, 0, 0.5);
-    background-color: rgba(76, 129, 208, 0.488);
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  background-color: rgba(76, 129, 208, 0.488);
 }
 
 td {
-    padding: 15px;
-    vertical-align: middle;
-    font-weight: 300;
-    font-size: 13px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    border: solid 1px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  border: solid 1px rgba(0, 0, 0, 0.5);
 }
 
-td:hover {
-    content: "";
-    /* position: absolute; */
-    left: 0;
-    right: 0;
-    top: -9999px;
-    bottom: -9999px;
-    background-color: rgba(148, 207, 252, 0.289);
-    z-index: -1;
+tbody {
+  tr {
+    &:hover {
+      background-color: rgba(148, 207, 252, 0.289);
+    }
+  }
+  td {
+    position: relative;
+    &:hover {
+      &:before {
+        content: "";
+        background-color: rgba(148, 207, 252, 0.289);
+      }
+    }
+  }
 }
